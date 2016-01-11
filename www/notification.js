@@ -93,7 +93,7 @@ module.exports = {
      */
     prompt: function(message, resultCallback, title, buttonLabels, defaultText) {
         var _message = (typeof message === "string" ? message : "");
-        var _title = (typeof title === "string" ? title : "Prompt");
+        var _title = (typeof title === "string" ? title : "");
         var _buttonLabels = (buttonLabels || ["OK","Cancel"]);
         var _defaultText = (defaultText || "");
         exec(resultCallback, null, "Notification", "prompt", [_message, _title, _buttonLabels, _defaultText]);
